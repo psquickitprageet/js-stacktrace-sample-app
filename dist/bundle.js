@@ -47,3 +47,5 @@ _LTracker.push({
   'sendConsoleErrors': true,
   'tag': 'loggly-jslogger,js-stacktrace'
 });
+
+//# sourceMappingURL=../dist/bundle.js.map

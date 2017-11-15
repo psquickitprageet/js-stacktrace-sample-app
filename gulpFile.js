@@ -1,8 +1,12 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
+
 
 gulp.task('scripts', function() {
- return gulp.src('./src/*.js')
-   .pipe(concat('bundle.js'))
-   .pipe(gulp.dest('./dist/'));
+  gulp.src('src/**/*.js')
+    .pipe(sourcemaps.init())
+        .pipe(concat('bundle.js'))
+        .pipe(sourcemaps.write('../dist'))
+        .pipe(gulp.dest('dist'));
 });
