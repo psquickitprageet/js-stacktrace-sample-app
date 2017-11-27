@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp scripts && http-server"
+    "start": "gulp watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-bundle-assets": "^2.29.0",
     "gulp-concat": "^2.6.1",
     "gulp-sourcemaps": "^2.6.1",
-    "http-server": "^0.10.0"
+    "gulp-watch": "^4.3.11",
+    "gulp-webserver": "^0.9.1"
   }
 }
